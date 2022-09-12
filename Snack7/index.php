@@ -26,13 +26,13 @@
                 ];
 
         ?>
-        <?php foreach($students as $student) { ?>
+        <?php foreach($students as $student) ?>
          <ul>
             <li><?php echo "Name: " . $student["nome"] ?></li>
             <li><?php echo "Cognome: " . $student["cognome"] ?></li>
-            <li><?php echo "Media: " . array_sum($student["voti"]); ?></li>
+            <li><?php echo "Media: " . array_sum($student["voti"]) / count ($student["voti"]); ?></li>
          </ul>
-        <?php } ?>
+        <?php ?>
 
 
    </body>
